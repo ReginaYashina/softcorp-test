@@ -481,12 +481,17 @@ body {
   margin: 0 auto 20px;
   position: relative;
 
+  svg {
+    fill: #FFFFFF;
+    transition: .8s;
+  }
+
   @media (max-width: 992px) {
     width: 85px;
     height: 85px;
     margin-bottom: 15px;
 
-    img {
+    svg {
       max-width: 60%;
     }
   }
@@ -1074,5 +1079,19 @@ body {
       font-size: 20px;
       line-height: 44px;
     }
+  }
+}
+
+/* scale */
+.scale {
+  transition: .8s;
+}
+
+.scale:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 40px 40px #FFFFFF inset;
+
+  svg {
+    fill: #3E9CDC;
   }
 }
