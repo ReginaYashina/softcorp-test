@@ -107,5 +107,13 @@ burger.addEventListener('click', function () {
 
 //REMOVE <br>
 if (window.innerWidth <= 992) {
-  document.querySelector('.title--main br').remove();
+  document.querySelector('.title--main br').style.display = 'none';
 }
+
+window.addEventListener('resize', function () {
+  if (window.innerWidth <= 992) {
+    document.querySelector('.title--main br').style.display = 'none';
+  } else {
+    document.querySelector('.title--main br').style.display = 'inline-block';
+  }
+});
