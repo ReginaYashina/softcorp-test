@@ -480,6 +480,15 @@ body {
   border: 5px solid #286690;
   margin: 0 auto 20px;
   position: relative;
+  transition: .8s;
+
+  &:hover {
+    box-shadow: 0 0 40px 40px #FFFFFF inset;
+
+    svg {
+      fill: #3E9CDC;
+    }
+  }
 
   svg {
     fill: #FFFFFF;
@@ -1076,19 +1085,5 @@ body {
       font-size: 20px;
       line-height: 44px;
     }
-  }
-}
-
-/* scale */
-.scale {
-  transition: .8s;
-}
-
-.scale:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 40px 40px #FFFFFF inset;
-
-  svg {
-    fill: #3E9CDC;
   }
 }
